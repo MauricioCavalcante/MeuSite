@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.borda {
+    border: 2px solid red;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.topo {
+    margin: 0;
+    padding: 0;
+    height: 150px;
+}
+
+.container-marca {
+    height: 100%;
+    min-width: 200px;
+}
+
+.topo-img{
+    height: 100%;
+}
+
+.nav-img{
+    height: 50px;
+}
+
+.grid{
+    display: flex;  
+}
+.section-3 {
+    height: 200px auto;
+    background-color: black;
+    border-radius: 2dvh;
+    color: white;
+}
+
+.section-3-img{
+    border-radius: 15px;
+    height: 400px;
+}
+
+.container-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+}
+
+.whatsapp{
+    background-image: url('icones/whatsapp-black.png');
+}
+.whatsapp:hover{
+    background-image: url('icones/whatsapp.png');
+}
+.linkedin{
+    background-image: url('icones/linkedin-black.png');
+}
+.linkedin:hover{
+    background-image: url('icones/linkedin.png');
+}
+.github{
+    background-image: url('icones/github.png');
+}
+.github:hover{
+    background-image: url('icones/github.png');
+}
+.instagram{
+    background-image: url('icones/instagram-black.png');
+}
+.instagram:hover{
+    background-image: url('icones/instagram.png');
+}
+
+.icon{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.icon:hover{
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+button{
+    border: none
+}
+/* modelos ----------------------------------------------------------------------------- */
+.form-model{
+    height: 400px;
+    width: 300px;
+    background-color: rgba(197, 197, 197, 0.363);
+    padding: 10%;
+    border-radius: 15px;
+    border: 2px solid gray;
+}
+
+.form-logo {
+    width: auto;
+    height: 60px;
+}
