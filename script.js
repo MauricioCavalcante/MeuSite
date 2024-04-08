@@ -7,7 +7,7 @@ document.getElementById('enviarWhatsapp').addEventListener('click', function() {
     window.open(linkWhatsapp);
   });
 
-  function togglePasswordVisibility() {
+function togglePasswordVisibility() {
     const passwordInput = document.getElementById('password');
     const passwordIcon = document.getElementById('passwordIcon');
 
@@ -20,4 +20,32 @@ document.getElementById('enviarWhatsapp').addEventListener('click', function() {
       passwordIcon.classList.remove('bi-eye-slash-fill');
       passwordIcon.classList.add('bi-eye-fill');
     }
-  }
+};
+
+function alternatePages (){
+  const button1 = document.getElementById('btn1');
+  const button2 = document.getElementById('btn2');
+
+  document.getElementById('btn1').addEventListener('click', function() {
+    var info1 = document.getElementById('informacao1');
+    var info2 = document.getElementById('informacao2');
+
+    button1.classList.add('clicked');
+    button2.classList.remove('clicked');
+    info1.classList.add('show');
+    info2.classList.remove('show');
+  });
+
+  document.getElementById('btn2').addEventListener('click', function() {
+    var info1 = document.getElementById('informacao1');
+    var info2 = document.getElementById('informacao2');
+
+    button1.classList.remove('clicked');
+    button2.classList.add('clicked');
+    info2.classList.add('show');
+    info1.classList.remove('show');
+  });
+
+};
+
+
