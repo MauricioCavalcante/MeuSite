@@ -644,7 +644,7 @@ document.addEventListener('DOMContentLoaded', function () {
     };
 
     // Carrega o arquivo CSV com os códigos e formatos dos países
-    fetch('./DDIs-Table/DDIs.csv')
+    fetch('DDIs.csv')
         .then(response => response.text())
         .then(text => {
             // Divide o texto do CSV em linhas e remove o cabeçalho
