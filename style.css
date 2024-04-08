@@ -6,6 +6,9 @@
 .borda {
     border: 2px solid red;
 }
+.color{
+    color: rgb(43, 43, 179);
+}
 
 .center {
     display: flex;
@@ -37,7 +40,7 @@
 }
 .section-3 {
     height: 200px auto;
-    background-color: black;
+    background-color: rgb(15, 12, 61);
     border-radius: 2dvh;
     color: white;
 }
@@ -47,6 +50,7 @@
     height: 400px;
 }
 
+/* icones redes sociais ------------------------------------------- */
 .container-icon{
     display: flex;
     justify-content: center;
@@ -95,11 +99,13 @@
     background-repeat: no-repeat;
 }
 
-button{
+.icon-button {
     border: none
 }
 /* modelos ----------------------------------------------------------------------------- */
-.form-model{
+
+/* login ------------------------------------------- */
+.login-model{
     height: 400px;
     width: 300px;
     background-color: rgba(197, 197, 197, 0.363);
@@ -108,7 +114,155 @@ button{
     border: 2px solid gray;
 }
 
-.form-logo {
+.login-logo {
     width: auto;
     height: 60px;
+}
+.login-btn{
+    background-color: #f1f1f1;
+    border: 2px solid grey;
+}
+.login-btn:hover{
+    background-color: #f1f1f1;
+    border: 2px solid grey;
+}
+input[type="password"]{
+    background-color: transparent;
+    border: 2px solid grey;
+}
+
+/* navegacao estatica ------------------------------- */
+.navegacao{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    max-width: 600px;
+    border: 2px solid gray;
+    background-color: rgba(197, 197, 197, 0.363);
+}
+
+.btn-nav {
+    color: #333; 
+    background-color: #fff; 
+    border-color: #ccc;
+}
+.btn-nav:hover{
+    color: #fff; 
+    background-color: #6c757d; 
+    border-color: #6c757d;
+}
+.clicked {
+    color: #fff;
+    background-color: #6c757d; 
+    border-color: #6c757d; 
+}
+
+.container-info{
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+/* formularios ----------------------------------------- */
+
+.code-ddi{
+    background: transparent;
+    border: 1px solid grey;
+}
+
+.text-area,.text-area:focus,.text-area::after,
+input[type="text"],input[type="text"]:hover,input[type="text"]:focus,input[type="text"]::after,
+input[type="email"],input[type="email"]:hover,input[type="email"]:focus,input[type="email"]::after,
+input[type="textarea"]
+{
+    background-color: transparent;
+    border: 2px solid grey;
+}
+
+.button-form{
+    font-size: small;
+    display: flex;
+    border: none;
+    justify-content: center;
+    text-decoration: none;
+    width: 250px;
+    background: gray;
+    color: white;
+    
+    padding: 8px;
+    margin-bottom: 60px;
+}
+
+.button-form:hover{
+    background: black;
+    color: white;
+}
+
+.imagem-topo-form{
+    background-size: cover;
+    max-width: 800px;
+}
+
+.container-radio label {
+    display: flex;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 0.375em;
+}
+  
+.container-radio  label input {
+    position: absolute;
+    left: -9999px;
+}
+  
+.container-radio label input:checked {
+    background-color: gray;
+    color: white;
+}
+.container-radio label input:checked + span:before {
+    animation: animar-logo 0.3s forwards, animar-opacidade 0.3s forwards;
+    background-color: gray;
+    border: 1px solid gray;
+}
+  
+.container-radio label span {
+    display: flex;
+    align-items: center;
+    border-radius: 99em;
+    transition: 0.25s ease;
+}
+  
+.container-radio label span:before {
+    display: flex;
+    flex-shrink: 0;
+    content: "";
+    background-color:#ffffff;
+    width: 1.2em;
+    height: 1.2em;
+    border: 2px solid grey;
+    border-radius: 50%;
+    margin-right: 0.375em;
+}
+
+.select-input{
+    border: 2px solid grey;
+    color: rgb(34, 34, 34);
+    background-color: white;
+    border-radius: 15px;
+    padding-left: 5px;
+}
+.select-input::after{
+    border: 2px solid grey;
+    color: rgb(34, 34, 34);
+    background-color: white;
+    border-radius: 1px;
+    padding-left: 5px;
+}
+
+option{
+    color: rgb(34, 34, 34);
+    background-color: white;
 }
