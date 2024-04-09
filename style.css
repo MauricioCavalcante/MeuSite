@@ -20,15 +20,11 @@
     margin: 0;
     padding: 0;
     height: 150px;
-}
-
-.container-marca {
-    height: 100%;
-    min-width: 200px;
+    background-color:#ffffff;
 }
 
 .topo-img{
-    height: 100%;
+    max-height: 90%;
 }
 
 .nav-img{
@@ -86,7 +82,12 @@
 .instagram:hover{
     background-image: url('icones/instagram.png');
 }
-
+.email{
+    background-image: url('icones/mail.black.png');
+}
+.email:hover{
+    background-image: url('icones/mail.png');
+}
 .icon{
     width: 60px;
     height: 60px;
