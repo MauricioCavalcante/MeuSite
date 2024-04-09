@@ -123,6 +123,12 @@ footer{
     max-width: 900px;
 }
 
+.section-4{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
 /* login ------------------------------------------- */
 .login-model{
     height: 400px;
@@ -291,4 +297,60 @@ input[type="textarea"]
 option{
     color: rgb(34, 34, 34);
     background-color: white;
+}
+
+
+/* recursos coloridos ------------------------------------------- */
+
+.card-1 {
+    width: 300px;
+    height: 400px;
+    border: 3px solid transparent;
+    border-radius: 10px;
+    animation: changeColor 6s ease-in-out infinite alternate;
+}
+
+.card-2{
+    width: 300px;
+    height: 400px;
+    border-radius: 10px;
+    border: 2px solid grey;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card-2-border{
+    width: 98%;
+    height: 98%;
+    border-radius: 10px;
+    border: 2px solid grey;
+    background-color: white;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-2-circle{
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    background: linear-gradient(red, orange, yellow, green, blue, indigo, violet);
+    position: absolute;
+    animation: rotateCircle 2s linear infinite;
+}
+
+@keyframes changeColor {
+    0%, 100% { border-color: red; }
+    25% { border-color: blue; }
+    50% { border-color: green; }
+    75% { border-color: yellow; }
+}
+
+@keyframes rotateCircle {
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(360deg);}
 }
