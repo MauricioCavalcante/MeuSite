@@ -48,4 +48,17 @@ function alternatePages (){
 
 };
 
+var scriptUrl = 'https://script.google.com/macros/s/AKfycbynqGMAGZ0FTZPSVRKSl3RzxV0hfCwwnyWGU57t-niYoFPzzE_ImAUDRALyo2qqsft7Zw/exec';
 
+  // Função para carregar e exibir o número de linhas
+  function carregarNumeroLinhas() {
+    fetch(scriptUrl)
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById('numeroLinhas').innerText = 'Número de Linhas Preenchidas: ' + data;
+    })
+    .catch(error => console.error('Erro ao carregar número de linhas:', error));
+  }
+
+  // Carregar o número de linhas ao carregar a página
+  window.onload = carregarNumeroLinhas;
