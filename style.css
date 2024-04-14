@@ -20,9 +20,11 @@
     margin: 0;
     padding: 0;
     height: 150px;
-    background-color:#ffffff;
+    background:linear-gradient(to bottom, #2e323b , #08111a);
+}
 
-    
+.topo-texto{
+    color: #d5dee6;
 }
 
 .topo-img{
@@ -39,10 +41,11 @@
 }
 .section-0 {
     height: 200px auto;
-    background-color: rgb(15, 12, 61);
+    background: linear-gradient(to bottom, #000000, #214466);
     border-radius: 1dvh;
     color: white;
     max-width: 1000px;
+    text-align: justify;
 }
 
 .section-0-img{
@@ -109,7 +112,7 @@
 }
 
 footer{
-    background-color: gray;
+    background:linear-gradient(to bottom, #2e323b , #08111a);
     color: white;
 }
 
